@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import TileBoard from './components/Tileboard';
+
 import './App.css';
 
+/*
+  -Components
+    -Each tile will need to be it's own component
+  -Functionality
+    -Each tile will need to have a mouseEnter event and a mouseLeave event
+    -mouseEnter event:
+      -A random color will need to be selected and fill in the background of the tile
+    -mouseLeave event:
+      -Color will need to fade back to the original color of the tile after a couple of seconds (maybe 3 seconds)
+*/
+
 function App() {
+
+  const squareCount = 500;
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TileBoard squares={squareCount}/>
     </div>
   );
 }
