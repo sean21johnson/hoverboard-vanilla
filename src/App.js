@@ -26,3 +26,16 @@ function App() {
 }
 
 export default App;
+
+/*
+  Next projects:
+    -Gravity switch
+    -Event key codes
+    -Animated navigation
+    -Text to life
+    -Exchange rate calculator
+    -Panda eye follow
+    -Loading animation
+    -Image password strength
+    -Expanding cards
+*/ 
